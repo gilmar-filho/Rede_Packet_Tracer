@@ -1,0 +1,89 @@
+<html>
+
+<body style="font-family: Arial; background-color: #f7f7f7; color: #222; padding: 30px;">
+    <font size="+1">
+        <h1 text-align: center;">
+            <font size="+3">📝 Como Funciona o Servidor FTP?</font>
+        </h1>
+
+        <p>O protocolo FTP (File Transfer Protocol) permite o envio (upload) e o recebimento (download) de arquivos
+            entre dispositivos conectados à mesma rede.</p>
+
+        <hr>
+
+        <h2>
+            <font size="+2">🖥️ Como se conectar ao servidor FTP</font>
+        </h2>
+        <p>1. Acesse o Command Prompt <b>(Desktop > Command Prompt)</b> do seu computador.</p>
+        <p>2. Digite o seguinte comando:</p>
+        <pre>
+        ftp ftp.server.local
+    </pre>
+        <p>Ou use o IP diretamente:</p>
+        <pre>
+        ftp 192.168.1.102
+    </pre>
+        <p>3. Informe o usuário e a senha quando solicitado:</p>
+        <ul>
+            <li><strong>Usuário:</strong> hugo</li>
+            <li><strong>Senha:</strong> 2314</li>
+            <li><strong>Permissões:</strong> RWDNL (Read, Write, Delete, reName e List)</li><br>
+            <li><strong>Usuário:</strong> gilmar</li>
+            <li><strong>Senha:</strong> 1234</li>
+            <li><strong>Permissões:</strong> WL (Write e List)</li><br>
+            <li><strong>Usuário:</strong> samuel</li>
+            <li><strong>Senha:</strong> 4321</li>
+            <li><strong>Permissões:</strong> RL (Read e List)</li><br>
+        </ul>
+        <pre>
+        ⚠️ A senha é invísivel, não se assuste.
+        Apenas digite a senha do usuário e pressione ENTER.
+       </pre>
+
+        <hr>
+
+        <h2>
+            <font size="+2">📤 Enviando arquivos (upload)</font>
+        </h2>
+        <p>1. Crie um arquivo usando o Text Editor <b>(Desktop > Text Editor)</b> e salve, por exemplo, como
+            <code>teste.txt</code>.</p>
+        <p>2. No terminal, após se conectar ao FTP, digite:</p>
+        <pre>
+        put teste.txt
+
+
+        ⚠️ Certifique-se de ter logado com um usuário 
+        que tenha permissão de escrever dados (Write)
+    </pre>
+
+        <p>3. Liste os arquivos do servidor FTP com o comando <code>dir</code> para verificar se os arquivos 'subiram'
+            para o servidor</p>
+
+        <hr>
+
+        <h2>
+            <font size="+2">📥 Baixando arquivos (download)</font>
+        </h2>
+        <p>1. Liste os arquivos do servidor FTP com o comando: <code>dir</code>.</p>
+        <p>2. Para baixar um arquivo do servidor para seu computador, use:</p>
+        <pre>
+        get nome_do_arquivo.txt
+
+
+        ⚠️ Certifique-se de ter logado com um usuário 
+        que tenha permissão de baixar dados (Read)
+
+        ⚠️ Certifique-se de que o nome do arquivo existe 
+        no servidor FTP antes de tentar baixá-lo.
+    </pre>
+
+        <p>3. Para ver o(s) arquivo(s) baixado(s), saia do servidor FTP digitando <code>quit</code> no terminal e depois
+            digite <code>dir</code> para listar todos os arquivos da máquina.<br><br>
+            Ou vá até o TFTP Service <b>(Desktop > TFTP Service)</b> para visualizar todos os arquivos baixados na
+            máquina.</p>
+
+        <p style="text-align: center;"><a href="index.html">⬅️ Voltar à página inicial</a></p>
+    </font>
+</body>
+
+</html>

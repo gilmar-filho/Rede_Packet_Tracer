@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Descrição da Rede</title>
+</head>
+
+<body style="font-family: Arial; background-color: #f7f7f7; color: #222; padding: 30px;">
+    <h1 style="color: #004080; text-align: center;">📡 Descrição da Topologia da Rede</h1>
+
+    <p>Esta rede foi projetada para fins educacionais, com a divisão em duas sub-redes interconectadas por um roteador,
+        oferecendo acesso a serviços como Web, FTP e DNS.</p>
+
+    <h2>🔗 Conectividade</h2>
+    <ul>
+        <li>A rede é separada em duas sub-redes: uma para os hosts (192.168.0.1/24) e outra para os servidores
+            (192.168.1.1/24), interconectadas por um roteador.</li>
+        <li>Os dispositivos da rede se comunicam através de switches: Switch0 para os hosts e Switch1 para os
+            servidores.</li>
+    </ul>
+
+    <h2>🖥️ Hosts</h2>
+    <ul>
+        <li>Inclui 2 computadores (PC1, PC2) e 2 laptops (Laptop1, Laptop2), todos conectados por cabo à rede (sub-rede
+            192.168.0.1/24).</li>
+        <li>O Laptop3 está conectado via Access Point, proporcionando acesso sem fio à rede, também na sub-rede
+            192.168.0.1/24.</li>
+    </ul>
+
+    <h2>📡 Dispositivo Wi-Fi (Access Point)</h2>
+    <ul>
+        <li>Permite que dispositivos, como o Laptop3, se conectem à rede de forma sem fio, funcionando como um host
+            dentro da rede.</li>
+    </ul>
+
+    <h2>🧾 Servidores</h2>
+    <ul>
+        <li><strong>Servidor Web:</strong> Hospeda páginas HTML acessíveis pelos hosts via HTTP. Conectado ao Switch1,
+            na sub-rede 192.168.1.1/24.</li>
+        <li><strong>Servidor DNS:</strong> Traduz nomes de domínio (ex: ftp.server.local) para endereços IP, facilitando
+            o acesso aos serviços. Também conectado ao Switch1.</li>
+        <li><strong>Servidor FTP:</strong> Permite a transferência de arquivos entre hosts e servidores, com
+            autenticação via login e senha. Utiliza o protocolo FTP e está conectado ao Switch1.</li>
+    </ul>
+
+    <h2>🌐 Roteador</h2>
+    <ul>
+        <li>Conecta as duas sub-redes, permitindo a comunicação entre os hosts e os servidores, e gerenciando o tráfego
+            entre as diferentes partes da rede.</li>
+    </ul>
+
+
+
+    <p style="text-align: center;"><a href="topologia.html">⬅️ Voltar à página anterior</a></p>
+</body>
+
+</html>
