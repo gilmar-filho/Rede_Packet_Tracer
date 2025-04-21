@@ -38,7 +38,7 @@
         <pre>
         ⚠️ A senha é invísivel, não se assuste.
         Apenas digite a senha do usuário e pressione ENTER.
-       </pre>
+        </pre>
 
         <hr>
 
@@ -54,7 +54,7 @@
 
         ⚠️ Certifique-se de ter logado com um usuário 
         que tenha permissão de escrever dados (Write)
-    </pre>
+        </pre>
 
         <p>3. Liste os arquivos do servidor FTP com o comando <code>dir</code> para verificar se os arquivos 'subiram'
             para o servidor</p>
@@ -75,12 +75,51 @@
 
         ⚠️ Certifique-se de que o nome do arquivo existe 
         no servidor FTP antes de tentar baixá-lo.
-    </pre>
+        </pre>
 
         <p>3. Para ver o(s) arquivo(s) baixado(s), saia do servidor FTP digitando <code>quit</code> no terminal e depois
             digite <code>dir</code> para listar todos os arquivos da máquina.<br><br>
             Ou vá até o TFTP Service <b>(Desktop > TFTP Service)</b> para visualizar todos os arquivos baixados na
             máquina.</p>
+
+        <hr>
+        
+        <h2>
+            <font size="+2">📤 Deletando arquivo (delete)</font>
+        </h2>
+        <p>1. Liste os arquivos do servidor FTP com o comando: <code>dir</code>.</p>
+        <p>2. Escolha o arquivo que deseja remover (exemplo remover o arquivo <code>teste.txt</code>) e digite o comando:
+            <code>delete teste.txt</code> e o arquivo será removido.</p>
+        <pre>
+        ⚠️ Certifique-se de que o nome do arquivo que 
+        deseja deletar exista no servidor FTP
+
+        ⚠️ Certifique-se de ter logado com um usuário 
+        que tenha permissão de deletar dados (Delete)
+        </pre>
+
+        <p>3. Para verificar se o arquivo foi deletado, utilize o comando <code>dir</code> novamente, o arquivo
+        não deve aparecer na lista.</p>
+
+        <hr>
+
+        <h2>
+            <font size="+2">📤 Renomeando arquivo (rename)</font>
+        </h2>
+        <p>1. Liste os arquivos do servidor FTP com o comando: <code>dir</code>.</p>
+        <p>2. Escolha o arquivo que deseja renomear (exemplo renomear o arquivo <code>teste.txt</code>) e digite o comando:
+            <code>rename teste.txt teste_mudado.txt</code> onde <code>teste.txt</code> é o nome antigo e <code>teste_mudado.txt</code> é o 
+            novo nome.</p>
+        <pre>
+        ⚠️ Certifique-se de que o nome do arquivo que 
+        deseja renomear exista no servidor FTP
+
+        ⚠️ Certifique-se de ter logado com um usuário 
+        que tenha permissão de renomear dados (Rename)
+        </pre>
+
+        <p>3. Para verificar se o arquivo foi renomeado, utilize o comando <code>dir</code> novamente, o arquivo
+        deve estar com o novo nome.</p>
 
         <p style="text-align: center;"><a href="index.html">⬅️ Voltar à página inicial</a></p>
     </font>
