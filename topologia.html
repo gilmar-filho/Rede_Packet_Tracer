@@ -1,0 +1,116 @@
+<html>
+
+<body style="font-family: Arial; background-color: #f7f7f7; color: #222; padding: 30px;">
+  <h1 style="color: #004080; text-align: center;">
+    <font size="+3"><b>🤖 Topologia da Rede</b></font>
+  </h1>
+
+  <font size="+1">
+
+    <h2>
+      <font size="+2">🖥️ Dispositivos:</font>
+    </h2>
+    <p>
+    <pre>
+  <strong>-> PC1:</strong>
+    • Nome: pc1.redes.ufla
+    • IP: 192.168.0.10
+    • Gateway: 192.168.0.1
+    • DNS: 192.168.1.53
+
+<hr>
+
+  <strong>-> PC2:</strong>
+    • Nome: pc2.redes.ufla
+    • IP: 192.168.0.11
+    • Gateway: 192.168.0.1
+    • DNS: 192.168.1.53
+
+<hr>
+
+  <strong>-> Laptop1:</strong>
+    • Nome: laptop1.redes.ufla
+    • IP: 192.168.0.12
+    • Gateway: 192.168.0.1
+    • DNS: 192.168.1.53
+
+<hr>
+
+  <strong>-> Laptop2:</strong>
+    • Nome: laptop2.redes.ufla
+    • IP: 192.168.0.13
+    • Gateway: 192.168.0.1
+    • DNS: 192.168.1.53
+
+<hr>
+
+  <strong>-> Laptop3:</strong>
+    • Nome: laptop3.redes.ufla
+    • IP: 192.168.0.14
+    • Gateway: 192.168.0.1
+    • DNS: 192.168.1.53
+    • Conectado via Access Point
+
+<hr>
+
+  <strong>-> Servidor Web:</strong>
+    • Nome: web.redes.ufla
+    • IP: 192.168.1.80
+    • Gateway: 192.168.1.1
+    • DNS: 192.168.1.53
+
+<hr>
+
+  <strong>-> Servidor DNS:</strong>
+    • Nome: dns.redes.ufla
+    • IP: 192.168.1.53
+    • Gateway: 192.168.1.1
+    • DNS: -
+
+<hr>
+
+  <strong>-> Servidor FTP:</strong>
+    • Nome: ftp.redes.ufla
+    • IP: 192.168.1.20
+    • Gateway: 192.168.1.1
+    • DNS: 192.168.1.53
+
+</pre>
+    </p>
+
+
+    <hr>
+
+    <h2>
+      <font size="+2">📋 Descrição:</font>
+    </h2>
+    <p>
+    <p>📡 <a href="descricao.html">Descrição da Rede</a></p>
+    A rede está dividida em duas partes principais, conectadas por meio de um roteador:
+    </p>
+
+    <ul>
+      <li><b>Hosts:</b></li>
+      <ul>
+        <li>2 Computadores (PC1 e PC2)</li>
+        <li>3 Laptops (Laptop1, Laptop2 e Laptop3)</li>
+        <li>O Laptop3 está conectado via <b>Access Point</b>, que por sua vez está ligado ao <b>Switch0</b></li>
+        <li>Todos esses dispositivos estão conectados ao <b>Switch0</b>, na sub-rede: 192.168.0.1/24</li>
+      </ul>
+      <br>
+
+      <li><b>Servidores:</b></li>
+      <ul>
+        <li>Servidor Web</li>
+        <li>Servidor DNS</li>
+        <li>Servidor FTP</li>
+        <li>Todos conectados ao <b>Switch1</b>, na sub-rede: 192.168.1.1/24</li>
+      </ul>
+    </ul>
+
+    <p style="text-align: center;">⬅️ <a href="index.html">Voltar à página inicial</a></p>
+
+  </font>
+</body>
+
+</html>

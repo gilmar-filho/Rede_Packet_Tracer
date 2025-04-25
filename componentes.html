@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Componentes da Rede</title>
+</head>
+
+<body style="font-family: Arial; background-color: #f0f0f0; color: #333; padding: 30px;">
+    <h1 style="color: #004080; text-align: center;">📘 Componentes da Rede</h1>
+
+    <p style="text-align: center;">Nesta página, você encontrará uma explicação sobre cada elemento presente na
+        topologia de rede do nosso projeto.</p>
+
+    <h2>🖥️ Hosts</h2>
+    <p>São os dispositivos finais utilizados pelos usuários para acessar os serviços da rede. No nosso projeto, temos
+        computadores e notebooks conectados à rede por cabo e por Wi-Fi. Eles acessam serviços como Web, FTP e DNS.</p>
+
+    <h2>📡 Dispositivo Wi-Fi (Access Point)</h2>
+    <p>Permite que dispositivos como notebooks se conectem à rede de forma sem fio. No nosso projeto, usamos um
+        <strong>Access Point</strong> para conectar o <strong>Laptop3</strong>, funcionando como um host via Wi-Fi.</p>
+
+    <h2>📶 Switch</h2>
+    <p>O switch conecta todos os dispositivos da rede local, como os hosts e servidores, formando a infraestrutura da
+        LAN. Ele funciona como um “distribuidor inteligente” de dados, enviando os pacotes para o destino correto.</p>
+
+    <h2>🌐 Roteador</h2>
+    <p>O roteador conecta duas redes diferentes. No nosso projeto, ele faz a ponte entre a rede dos hosts e a rede onde
+        estão os servidores. Isso permite que os hosts se comuniquem com os servidores Web, DNS e FTP.</p>
+
+    <h2>🧭 Servidor DNS</h2>
+    <p>Responsável por traduzir nomes como <code>ftp.redes.ufla</code> em endereços IP como
+        <code>192.168.1.20</code>. Isso facilita o acesso aos serviços sem precisar decorar números de IP. Ele é essencial
+        para o funcionamento por nome de domínio.</p>
+
+    <h2>🌐 Servidor Web</h2>
+    <p>Hospeda páginas HTML acessadas pelos hosts através do navegador. Ele usa o protocolo HTTP e serve como ponto
+        principal de informação, com links e tutoriais para o uso da rede.</p>
+
+    <h2>📁 Servidor FTP</h2>
+    <p>Permite a transferência de arquivos entre hosts e o servidor. Os usuários podem fazer <strong>upload</strong>
+        (enviar), <strong>download</strong> (receber), <strong>delete</strong> (excluir) e <strong>rename</strong> (renomear) arquivos, 
+        autenticando-se com login e senha. Utiliza o protocolo
+        FTP (File Transfer Protocol).</p>
+
+    <h2>🧱 Topologia Física da Rede</h2>
+    <p>Nossa rede é dividida em dois blocos principais:</p>
+    <ul>
+        <li>🔹 <strong>Bloco 1:</strong> Hosts conectados ao Switch0, com um Access Point para conexão sem fio e acesso
+            ao roteador.</li>
+        <li>🔹 <strong>Bloco 2:</strong> Servidores conectados ao Switch1, que se comunica com o Switch0 através do
+            roteador.</li>
+    </ul>
+    <p>Essa divisão proporciona organização e controle do tráfego de dados entre os diferentes setores da rede.</p>
+
+    <hr>
+
+    <p style="text-align: center;">
+        ⬅️ <a href="index.html">Voltar à Página Inicial</a>
+    </p>
+</body>
+
+</html>
